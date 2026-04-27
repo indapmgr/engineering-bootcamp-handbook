@@ -1,8 +1,3 @@
----
-title: "Part 6 — Debugging"
-layout: page
----
-
 # Part 6 — Debugging
 
 > **Key idea:** Debugging is not guessing. It is the systematic identification of where the system broke.

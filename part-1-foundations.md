@@ -1,8 +1,3 @@
----
-title: "Part 1 — Foundations"
-layout: page
----
-
 # Part 1 — Foundations
 
 > **Key idea:** Learn systems, not commands. Understand *why* a tool exists before memorising its syntax.

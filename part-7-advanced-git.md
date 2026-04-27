@@ -1,8 +1,3 @@
----
-title: "Part 7 — Advanced Git"
-layout: page
----
-
 # Part 7 — Advanced Git
 
 > **Key idea:** `main` must always be stable. All work happens in branches. Code reaches `main` only through pull requests.

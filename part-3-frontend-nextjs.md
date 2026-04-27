@@ -1,8 +1,3 @@
----
-title: "Part 3 — Frontend: Next.js + API Integration"
-layout: page
----
-
 # Part 3 — Frontend: Next.js + API Integration
 
 > **Golden rule:** The frontend never talks to the database directly. It only talks to backend APIs.

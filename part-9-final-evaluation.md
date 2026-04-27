@@ -1,8 +1,3 @@
----
-title: "Part 9 — Final Evaluation, Readiness, and Expectations"
-layout: page
----
-
 # Part 9 — Final Evaluation, Readiness, and Expectations
 
 > This section defines what "ready" actually means, how interns will be evaluated, and how to behave in a real engineering team.
