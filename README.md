@@ -1,80 +1,78 @@
-# Professional Profile - GitHub Pages
+# Intern Engineering Handbook V4
 
-This is a professional profile website hosted on GitHub Pages, designed to showcase work experience, technical skills, and education to hiring managers and recruiters.
+A practical, full-stack engineering onboarding handbook for interns.
 
-## 🌐 Live Website
+Published as a GitHub Pages documentation site at **[https://indapmgr.github.io/docs/](https://indapmgr.github.io/docs/)**.
 
-Once deployed, your profile will be available at: `https://indapmgr.github.io`
+---
 
-## 🎨 Features
+## 📚 Handbook Contents
 
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Professional Layout**: Clean, modern design with a blue gradient header
-- **Complete Sections**:
-  - Professional Summary
-  - Work Experience
-  - Technical Skills (organized by category)
-  - Education & Certifications
-  - Notable Projects
-- **Interactive Elements**: Hover effects on skills and experience cards
-- **Print-Friendly**: Optimized styles for printing as a resume
-- **Accessible**: Semantic HTML and good contrast for accessibility
+| Part | Title |
+|------|-------|
+| [Part 1](docs/part-1-foundations.md) | Foundations |
+| [Part 2](docs/part-2-backend-fastapi.md) | Backend: FastAPI |
+| [Part 3](docs/part-3-frontend-nextjs.md) | Frontend: Next.js + API Integration |
+| [Part 4](docs/part-4-docker.md) | Docker + Docker Compose |
+| [Part 5](docs/part-5-postgresql.md) | PostgreSQL + Database Integration |
+| [Part 6](docs/part-6-debugging.md) | Debugging |
+| [Part 7](docs/part-7-advanced-git.md) | Advanced Git |
+| [Part 8](docs/part-8-full-project.md) | Full End-to-End Project |
+| [Part 9](docs/part-9-final-evaluation.md) | Final Evaluation, Readiness, and Expectations |
 
-## ✏️ How to Customize
+---
 
-1. **Edit `index.html`** to update your personal information:
-   - Replace "Your Name" with your actual name
-   - Update the tagline/title
-   - Change email, GitHub, and LinkedIn URLs
-   - Customize the Professional Summary
-   - Add your actual work experience, skills, education, and projects
+## 🚀 Quick Start
 
-2. **Edit `styles.css`** (optional) to customize colors:
-   - Change `--primary-color` and `--secondary-color` in the `:root` section
-   - Adjust spacing, fonts, or other styling as desired
+### View online
 
-3. **Commit and push** your changes:
-   ```bash
-   git add .
-   git commit -m "Update profile information"
-   git push origin main
-   ```
+Open the handbook at: [https://indapmgr.github.io/docs/](https://indapmgr.github.io/docs/)
 
-## 🚀 Deployment
+### Run locally with Jekyll
 
-GitHub Pages will automatically deploy your site when you push to the `main` branch. Your profile will be live at `https://indapmgr.github.io` within a few minutes.
+```bash
+# Install dependencies
+gem install bundler jekyll
 
-## 📸 Preview
+# Clone and serve
+git clone https://github.com/indapmgr/indap.github.io.git
+cd indap.github.io
+bundle init
+bundle add jekyll minima jekyll-feed jekyll-seo-tag
+bundle exec jekyll serve
+```
 
-The profile includes sections for all essential career information:
-- Header with contact information
-- Professional summary
-- Detailed work experience with accomplishments
-- Categorized technical skills
-- Education and certifications
-- Notable projects
+Open [http://localhost:4000/docs/](http://localhost:4000/docs/) in your browser.
 
-## 💡 Tips
+---
 
-- Keep your content concise and focused on achievements
-- Use action verbs in your experience bullets
-- Quantify accomplishments when possible (e.g., "Improved performance by 40%")
-- Update your skills section regularly as you learn new technologies
-- Include links to your best projects or portfolio items
+## 🧠 Core Principle
 
-## 📄 License
+Being ready does **not** mean finishing tutorials.
 
-Feel free to use this template for your own professional profile!
-=======
+Being ready means:
 
-# Indap Pun Magar
-**Senior Software Engineer (FinTech)** — Java • Spring Boot • Kafka • AWS
+> You can take a task, understand it, break it down, implement it, debug it, and deliver it independently.
 
-- Spring Boot 1.5.x → 2.7.x upgrade across 80+ services, reducing 2000+ vulnerabilities to <150.
-- Kafka Streaming Data Platform (v3 → v4) migration: service refactors, schema flattening, dataset registration, and test strategy alignment.
-- Acceptance Test–Driven Development (ATDD) with JUnit, Mockito, and Cucumber; enhanced CI/CD with Jenkins quality gates.
-- Observability: Splunk • CloudWatch • Grafana • Prometheus • WhiteSource
+---
 
-## Resume
-- **[Download PDF](https://your-username.github.io/assets/Indap_Resume_2025.pdf)**
-- **[Download Word](https://indapmgr.github.io/assets/Indap_Resume_2025.docx)**
+## Repository Structure
+
+```text
+indap.github.io/
+├── _config.yml          # Jekyll / GitHub Pages configuration
+├── README.md            # This file
+├── index.html           # Profile page (https://indapmgr.github.io)
+├── styles.css           # Profile page styles
+└── docs/
+    ├── index.md         # Handbook homepage
+    ├── part-1-foundations.md
+    ├── part-2-backend-fastapi.md
+    ├── part-3-frontend-nextjs.md
+    ├── part-4-docker.md
+    ├── part-5-postgresql.md
+    ├── part-6-debugging.md
+    ├── part-7-advanced-git.md
+    ├── part-8-full-project.md
+    └── part-9-final-evaluation.md
+```
