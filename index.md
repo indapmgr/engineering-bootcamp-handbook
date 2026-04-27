@@ -1,8 +1,3 @@
----
-title: Intern Engineering Handbook
-layout: home
----
-
 # Intern Engineering Handbook
 
 Welcome to the **Intern Engineering Handbook** — a practical, hands-on guide to becoming a productive member of a real engineering team.

@@ -1,8 +1,3 @@
----
-title: "Part 2 — Backend: FastAPI"
-layout: page
----
-
 # Part 2 — Backend: FastAPI
 
 > **Key idea:** The backend is responsible for validation, business logic, data handling, and error handling. The frontend never touches the database.

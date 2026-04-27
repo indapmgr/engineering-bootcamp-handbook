@@ -1,8 +1,3 @@
----
-title: "Part 5 — PostgreSQL + Database Integration"
-layout: page
----
-
 # Part 5 — PostgreSQL + Database Integration
 
 > **Key idea:** A database stores structured, queryable, persistent data. Without it, all data disappears when the server restarts.

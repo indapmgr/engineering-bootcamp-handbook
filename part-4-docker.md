@@ -1,8 +1,3 @@
----
-title: "Part 4 — Docker + Docker Compose"
-layout: page
----
-
 # Part 4 — Docker + Docker Compose
 
 > **Key idea:** Docker eliminates "works on my machine." Every developer and every server runs the exact same environment.

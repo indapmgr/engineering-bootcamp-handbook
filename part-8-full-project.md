@@ -1,8 +1,3 @@
----
-title: "Part 8 — Full End-to-End Project"
-layout: page
----
-
 # Part 8 — Full End-to-End Project
 
 > **Goal:** Build a complete, working full-stack system from scratch: Next.js frontend, FastAPI backend, PostgreSQL database, and Docker Compose orchestration.
