@@ -29,13 +29,13 @@ your-machine/
 
 No conflicts. Each project stays clean and independent.
 
-> **Full setup instructions:** If you haven't set up your development environment yet, go through [Part 1 — Section 1.9: Create and Activate a Virtual Environment](part-1-foundations) first. It covers creating, activating, and troubleshooting venvs on Windows, Mac, and Linux with detailed error guidance.
+> **Full setup instructions:** If you haven't set up your development environment yet, go through [Part 1 — Section 1.9: Create and Activate a Virtual Environment](part-1-development-environment) first. It covers creating, activating, and troubleshooting venvs on Windows, Mac, and Linux with detailed error guidance.
 
 ---
 
 ## 2. Quick Venv Reference
 
-This is a quick-reference summary. For full details and troubleshooting, see [Part 1 — Foundations](part-1-foundations).
+This is a quick-reference summary. For full details and troubleshooting, see [Part 1 — Development Environment](part-1-development-environment).
 
 **Create (once per project):**
 
