@@ -85,6 +85,7 @@ class UserCreate(BaseModel):
     name: str      # Required; any string
     email: str     # Required; ideally unique in the database
     age: int       # Required; must be an integer
+    # No Config class needed here — UserCreate is not read from database rows
 
 # Schema for outgoing responses — what the API returns to the client
 class UserResponse(BaseModel):
@@ -94,7 +95,7 @@ class UserResponse(BaseModel):
     age: int
 
     class Config:
-        from_attributes = True   # Allows Pydantic to read from DB row objects
+        from_attributes = True   # Required for response models that map from DB row objects
 ```
 
 ### Database Connection
@@ -345,9 +346,13 @@ def test_health():
 
 def test_create_user():
     """Create a user and verify the response."""
+    # Use a unique email each run to avoid duplicate key errors on repeated runs
+    # (the email column has a UNIQUE constraint in the database)
+    import time
+    unique_email = f"alice_{int(time.time())}@example.com"
     response = requests.post(
         f"{BASE_URL}/users",
-        json={"name": "Alice", "email": "alice@example.com", "age": 28}
+        json={"name": "Alice", "email": unique_email, "age": 28}
     )
     assert response.status_code == 201, f"Expected 201, got {response.status_code}"
     data = response.json()

@@ -160,7 +160,7 @@ docker exec -it <postgres_id> psql -U postgres -d appdb
 Then run:
 
 ```sql
--- Check if any rows exist
+-- See all rows in the users table (useful for verifying inserts worked)
 SELECT * FROM users;
 ```
 

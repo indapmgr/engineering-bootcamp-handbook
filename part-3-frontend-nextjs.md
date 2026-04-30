@@ -180,7 +180,9 @@ Install it (with your venv active):
 pip install requests
 ```
 
-**`test_api.py`**
+**`test_api.py`** (exploratory demo — prints results for you to inspect)
+
+> This demo-style script prints what the server returns so you can see and understand the output. Part 8 shows a full test script with assertions that automatically fail when a response is wrong.
 
 ```python
 import requests   # HTTP client library — pip install requests
