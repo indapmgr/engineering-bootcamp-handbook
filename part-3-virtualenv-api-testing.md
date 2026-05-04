@@ -79,13 +79,15 @@ __pycache__/
 With your venv active, install a package:
 
 ```bash
-pip3 install fastapi uvicorn requests
+pip install fastapi uvicorn requests    # Windows
+pip3 install fastapi uvicorn requests   # Mac / Linux
 ```
 
 Save all installed packages so teammates can recreate your exact environment:
 
 ```bash
-pip3 freeze > requirements.txt
+pip freeze > requirements.txt    # Windows
+pip3 freeze > requirements.txt   # Mac / Linux
 ```
 
 The file will look like:
@@ -99,7 +101,8 @@ requests==2.31.0
 Install from an existing `requirements.txt` (what teammates do when they clone your repo):
 
 ```bash
-pip3 install -r requirements.txt
+pip install -r requirements.txt    # Windows
+pip3 install -r requirements.txt   # Mac / Linux
 ```
 
 ---
@@ -121,10 +124,12 @@ source venv/bin/activate          # Mac/Linux
 # venv\Scripts\activate           # Windows
 
 # 4. Install dependencies
-pip3 install fastapi uvicorn requests
+pip install fastapi uvicorn requests    # Windows
+pip3 install fastapi uvicorn requests   # Mac / Linux
 
 # 5. Save dependencies for others
-pip3 freeze > requirements.txt
+pip freeze > requirements.txt    # Windows
+pip3 freeze > requirements.txt   # Mac / Linux
 
 # 6. Start coding!
 ```
@@ -140,7 +145,8 @@ The `requests` library lets you make HTTP calls from Python code — the same ki
 Install it (with your venv active):
 
 ```bash
-pip3 install requests
+pip install requests    # Windows
+pip3 install requests   # Mac / Linux
 ```
 
 **`test_api.py`** (exploratory demo — prints results for you to inspect)
@@ -148,7 +154,7 @@ pip3 install requests
 > This demo-style script prints what the server returns so you can see and understand the output. Part 8 shows a full test script with assertions that automatically fail when a response is wrong.
 
 ```python
-import requests   # HTTP client library — pip3 install requests
+import requests   # HTTP client library — install with pip (Windows) or pip3 (Mac/Linux)
 
 BASE_URL = "http://localhost:8000"   # Address where your FastAPI server is running
 

@@ -272,11 +272,11 @@ FROM python:3.11-slim
 # All commands run from /app inside the container
 WORKDIR /app
 
-# Copy requirements first — lets Docker cache the pip3 install layer
+# Copy requirements first — lets Docker cache the pip install layer
 COPY requirements.txt .
 
 # Install dependencies; --no-cache-dir keeps the image smaller
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
 COPY . .
@@ -333,7 +333,7 @@ volumes:
 **`test_api.py`**
 
 ```python
-import requests   # pip3 install requests
+import requests   # install with pip (Windows) or pip3 (Mac/Linux)
 
 BASE_URL = "http://localhost:8000"
 

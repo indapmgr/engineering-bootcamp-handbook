@@ -82,13 +82,15 @@ backend/
 First, activate your virtual environment (see Part 3 for details), then install dependencies:
 
 ```bash
-pip3 install fastapi uvicorn psycopg2-binary
+pip install fastapi uvicorn psycopg2-binary    # Windows
+pip3 install fastapi uvicorn psycopg2-binary   # Mac / Linux
 ```
 
 Save all installed packages to `requirements.txt` so others can recreate your environment:
 
 ```bash
-pip3 freeze > requirements.txt
+pip freeze > requirements.txt    # Windows
+pip3 freeze > requirements.txt   # Mac / Linux
 ```
 
 The file will contain entries like:

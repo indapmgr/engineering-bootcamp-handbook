@@ -514,8 +514,9 @@ Open a terminal (Git Bash on Windows, Terminal on Mac/Linux) and run each comman
 python --version         # Windows
 python3 --version        # Mac / Linux
 
-# Check pip3 (Python package manager)
-pip3 --version           # All platforms
+# Check pip (Python package manager)
+pip --version            # Windows
+pip3 --version           # Mac / Linux
 
 # Check Git
 git --version
@@ -835,7 +836,7 @@ Go through each item below. Do not move to Part 2 until every box is ticked.
 - [ ] **VS Code** (or PyCharm) is installed and opens without errors
 - [ ] VS Code Python extension is installed (or PyCharm is detecting Python automatically)
 - [ ] `python --version` (or `python3 --version`) shows `3.11.x` or newer in a terminal
-- [ ] `pip3 --version` shows a version number
+- [ ] `pip --version` (Windows) or `pip3 --version` (Mac/Linux) shows a version number
 - [ ] `git --version` shows `2.x.x` or newer
 - [ ] `git config --global user.name` and `user.email` are set
 - [ ] GitHub account created and verified at [github.com](https://github.com/)

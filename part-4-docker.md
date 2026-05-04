@@ -39,12 +39,12 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy requirements.txt first — before the rest of the code
-# Docker caches layers; if requirements.txt hasn't changed, pip3 install is skipped
+# Docker caches layers; if requirements.txt hasn't changed, pip install is skipped
 COPY requirements.txt .
 
 # Install Python dependencies
-# --no-cache-dir reduces image size by not caching the pip3 download files
-RUN pip3 install --no-cache-dir -r requirements.txt
+# --no-cache-dir reduces image size by not caching the pip download files
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code into the container
 COPY . .
@@ -64,7 +64,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 | `FROM python:3.11-slim` | Start from an official Python 3.11 image |
 | `WORKDIR /app` | Set the working directory inside the container |
 | `COPY requirements.txt .` | Copy only requirements first (enables layer caching) |
-| `RUN pip3 install ...` | Install Python dependencies |
+| `RUN pip install ...` | Install Python dependencies |
 | `COPY . .` | Copy all application code |
 | `EXPOSE 8000` | Documents that the container uses port 8000 |
 | `CMD [...]` | The command to run when the container starts |

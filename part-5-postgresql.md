@@ -100,7 +100,8 @@ DELETE FROM users WHERE id = 1;
 Install the PostgreSQL driver:
 
 ```bash
-pip3 install psycopg2-binary
+pip install psycopg2-binary    # Windows
+pip3 install psycopg2-binary   # Mac / Linux
 ```
 
 Add it to `requirements.txt`:
